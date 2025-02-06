@@ -47,7 +47,7 @@ public class YudaoWebAutoConfiguration implements WebMvcConfigurer {
     }
 
     /**
-     * 设置 API 前缀，仅仅匹配 controller 包下的
+     * 设置 API 前缀，仅仅匹配 cn.iocoder.yudao.module.erp.controller 包下的
      *
      * @param configurer 配置
      * @param api        API 配置
@@ -55,7 +55,7 @@ public class YudaoWebAutoConfiguration implements WebMvcConfigurer {
     private void configurePathMatch(PathMatchConfigurer configurer, WebProperties.Api api) {
         AntPathMatcher antPathMatcher = new AntPathMatcher(".");
         configurer.addPathPrefix(api.getPrefix(), clazz -> clazz.isAnnotationPresent(RestController.class)
-                && antPathMatcher.match(api.getController(), clazz.getPackage().getName())); // 仅仅匹配 controller 包
+                && antPathMatcher.match(api.getController(), clazz.getPackage().getName())); // 仅仅匹配 cn.iocoder.yudao.module.erp.controller 包
     }
 
     @Bean

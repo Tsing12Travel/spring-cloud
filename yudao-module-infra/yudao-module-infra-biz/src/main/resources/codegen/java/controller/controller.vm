@@ -1,4 +1,4 @@
-package ${basePackage}.module.${table.moduleName}.controller.${sceneEnum.basePackage}.${table.businessName};
+package ${basePackage}.module.${table.moduleName}.cn.iocoder.yudao.module.erp.controller.${sceneEnum.basePackage}.${table.businessName};
 
 import org.springframework.web.bind.annotation.*;
 import ${jakartaPackage}.annotation.Resource;
@@ -26,7 +26,7 @@ import ${ExcelUtilsClassName};
 import ${ApiAccessLogClassName};
 import static ${OperateTypeEnumClassName}.*;
 
-import ${basePackage}.module.${table.moduleName}.controller.${sceneEnum.basePackage}.${table.businessName}.vo.*;
+import ${basePackage}.module.${table.moduleName}.cn.iocoder.yudao.module.erp.controller.${sceneEnum.basePackage}.${table.businessName}.vo.*;
 import ${basePackage}.module.${table.moduleName}.dal.dataobject.${table.businessName}.${table.className}DO;
 ## 特殊：主子表专属逻辑
 #foreach ($subTable in $subTables)

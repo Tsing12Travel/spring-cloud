@@ -65,11 +65,11 @@ public class CodegenEngine {
      */
     private static final Map<String, String> SERVER_TEMPLATES = MapUtil.<String, String>builder(new LinkedHashMap<>()) // 有序
             // Java module-biz Main
-            .put(javaTemplatePath("controller/vo/pageReqVO"), javaModuleImplVOFilePath("PageReqVO"))
-            .put(javaTemplatePath("controller/vo/listReqVO"), javaModuleImplVOFilePath("ListReqVO"))
-            .put(javaTemplatePath("controller/vo/respVO"), javaModuleImplVOFilePath("RespVO"))
-            .put(javaTemplatePath("controller/vo/saveReqVO"), javaModuleImplVOFilePath("SaveReqVO"))
-            .put(javaTemplatePath("controller/controller"), javaModuleImplControllerFilePath())
+            .put(javaTemplatePath("cn.iocoder.yudao.module.erp.controller/vo/pageReqVO"), javaModuleImplVOFilePath("PageReqVO"))
+            .put(javaTemplatePath("cn.iocoder.yudao.module.erp.controller/vo/listReqVO"), javaModuleImplVOFilePath("ListReqVO"))
+            .put(javaTemplatePath("cn.iocoder.yudao.module.erp.controller/vo/respVO"), javaModuleImplVOFilePath("RespVO"))
+            .put(javaTemplatePath("cn.iocoder.yudao.module.erp.controller/vo/saveReqVO"), javaModuleImplVOFilePath("SaveReqVO"))
+            .put(javaTemplatePath("cn.iocoder.yudao.module.erp.controller/cn.iocoder.yudao.module.erp.controller"), javaModuleImplControllerFilePath())
             .put(javaTemplatePath("dal/do"),
                     javaModuleImplMainFilePath("dal/dataobject/${table.businessName}/${table.className}DO"))
             .put(javaTemplatePath("dal/do_sub"), // 特殊：主子表专属逻辑
@@ -441,12 +441,12 @@ public class CodegenEngine {
     }
 
     private static String javaModuleImplVOFilePath(String path) {
-        return javaModuleFilePath("controller/${sceneEnum.basePackage}/${table.businessName}/" +
+        return javaModuleFilePath("cn.iocoder.yudao.module.erp.controller/${sceneEnum.basePackage}/${table.businessName}/" +
                 "vo/${sceneEnum.prefixClass}${table.className}" + path, "biz", "main");
     }
 
     private static String javaModuleImplControllerFilePath() {
-        return javaModuleFilePath("controller/${sceneEnum.basePackage}/${table.businessName}/" +
+        return javaModuleFilePath("cn.iocoder.yudao.module.erp.controller/${sceneEnum.basePackage}/${table.businessName}/" +
                 "${sceneEnum.prefixClass}${table.className}Controller", "biz", "main");
     }
 
