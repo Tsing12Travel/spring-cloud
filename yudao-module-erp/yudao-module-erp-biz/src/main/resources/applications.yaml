@@ -1,0 +1,6 @@
+sping:
+  application:
+    name: erp-server
+
+  profile:
+    activate: local
