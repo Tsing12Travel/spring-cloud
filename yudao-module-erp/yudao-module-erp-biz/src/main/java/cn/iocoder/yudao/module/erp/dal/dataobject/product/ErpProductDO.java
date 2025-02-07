@@ -1,4 +1,4 @@
-package cn.iocoder.yudao.module.erp.controller.admin.product;
+package cn.iocoder.yudao.module.erp.dal.dataobject.product;
 
 import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
