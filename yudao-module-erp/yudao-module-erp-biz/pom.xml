@@ -88,12 +88,6 @@
             <artifactId>yudao-spring-boot-starter-monitor</artifactId>
         </dependency>
 
-        <!-- Test 测试相关 -->
-        <dependency>
-            <groupId>cn.iocoder.cloud</groupId>
-            <artifactId>yudao-spring-boot-starter-test</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>
