@@ -1,7 +1,0 @@
-(base) tsing@UM880Pro:~/Code/cloud-mini$ git remote -v
-origin  https://gitee.com/yudaocode/yudao-cloud-mini.git (fetch)
-origin  https://gitee.com/yudaocode/yudao-cloud-mini.git (push)
-(base) tsing@UM880Pro:~/Code/cloud-mini$ git remote set-url origin git@github.com:Tsing12Travel/erp.git
-(base) tsing@UM880Pro:~/Code/cloud-mini$ git remote -v
-origin  git@github.com:Tsing12Travel/erp.git (fetch)
-origin  git@github.com:Tsing12Travel/erp.git (push)
