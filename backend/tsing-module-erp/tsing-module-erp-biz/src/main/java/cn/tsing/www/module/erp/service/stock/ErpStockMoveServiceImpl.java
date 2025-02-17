@@ -32,17 +32,14 @@ import static cn.tsing.www.framework.common.exception.util.ServiceExceptionUtil.
 import static cn.tsing.www.framework.common.util.collection.CollectionUtils.*;
 import static cn.tsing.www.module.erp.enums.ErrorCodeConstants.*;
 
-// TODO 芋艿：记录操作日志
+// TODO ：记录操作日志
 
 /**
  * ERP 库存调拨单 Service 实现类
- *
- * @author 芋道源码
  */
 @Service
 @Validated
 public class ErpStockMoveServiceImpl implements ErpStockMoveService {
-
     @Resource
     private ErpStockMoveMapper stockMoveMapper;
     @Resource
@@ -212,7 +209,6 @@ public class ErpStockMoveServiceImpl implements ErpStockMoveService {
     }
 
     // ==================== 出库项 ====================
-
     @Override
     public List<ErpStockMoveItemDO> getStockMoveItemListByMoveId(Long moveId) {
         return stockMoveItemMapper.selectListByMoveId(moveId);
@@ -225,5 +221,4 @@ public class ErpStockMoveServiceImpl implements ErpStockMoveService {
         }
         return stockMoveItemMapper.selectListByMoveIds(moveIds);
     }
-
 }
