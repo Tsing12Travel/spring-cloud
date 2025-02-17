@@ -1,0 +1,3 @@
+cn.tsing.www.framework.datapermission.config.TsingDataPermissionAutoConfiguration
+cn.tsing.www.framework.datapermission.config.TsingDeptDataPermissionAutoConfiguration
+cn.tsing.www.framework.datapermission.config.TsingDataPermissionRpcAutoConfiguration

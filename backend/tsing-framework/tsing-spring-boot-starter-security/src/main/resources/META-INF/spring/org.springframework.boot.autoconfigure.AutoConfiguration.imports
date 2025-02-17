@@ -1,0 +1,5 @@
+cn.tsing.www.framework.security.config.TsingSecurityRpcAutoConfiguration
+cn.tsing.www.framework.security.config.TsingSecurityAutoConfiguration
+cn.tsing.www.framework.security.config.TsingWebSecurityConfigurerAdapter
+cn.tsing.www.framework.operatelog.config.TsingOperateLogConfiguration
+cn.tsing.www.framework.operatelog.config.TsingOperateLogRpcAutoConfiguration

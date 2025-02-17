@@ -1,0 +1,2 @@
+cn.tsing.www.framework.redis.config.TsingRedisAutoConfiguration
+cn.tsing.www.framework.redis.config.TsingCacheAutoConfiguration

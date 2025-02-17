@@ -1,0 +1,6 @@
+cn.tsing.www.framework.apilog.config.TsingApiLogAutoConfiguration
+cn.tsing.www.framework.jackson.config.TsingJacksonAutoConfiguration
+cn.tsing.www.framework.swagger.config.TsingSwaggerAutoConfiguration
+cn.tsing.www.framework.web.config.TsingWebAutoConfiguration
+cn.tsing.www.framework.apilog.config.TsingApiLogRpcAutoConfiguration
+cn.tsing.www.framework.banner.config.TsingBannerAutoConfiguration

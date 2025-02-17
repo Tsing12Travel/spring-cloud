@@ -1,0 +1,3 @@
+cn.tsing.www.framework.mq.redis.config.TsingRedisMQProducerAutoConfiguration
+cn.tsing.www.framework.mq.redis.config.TsingRedisMQConsumerAutoConfiguration
+cn.tsing.www.framework.mq.rabbitmq.config.TsingRabbitMQAutoConfiguration

@@ -1,0 +1,2 @@
+cn.tsing.www.framework.quartz.config.TsingXxlJobAutoConfiguration
+cn.tsing.www.framework.quartz.config.TsingAsyncAutoConfiguration

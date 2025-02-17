@@ -1,0 +1,4 @@
+cn.tsing.www.framework.idempotent.config.TsingIdempotentConfiguration
+cn.tsing.www.framework.lock4j.config.TsingLock4jConfiguration
+cn.tsing.www.framework.ratelimiter.config.TsingRateLimiterConfiguration
+cn.tsing.www.framework.signature.config.TsingApiSignatureAutoConfiguration

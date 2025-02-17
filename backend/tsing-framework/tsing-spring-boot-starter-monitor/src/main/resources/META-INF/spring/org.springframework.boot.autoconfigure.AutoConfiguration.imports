@@ -1,0 +1,2 @@
+cn.tsing.www.framework.tracer.config.TsingTracerAutoConfiguration
+cn.tsing.www.framework.tracer.config.TsingMetricsAutoConfiguration
