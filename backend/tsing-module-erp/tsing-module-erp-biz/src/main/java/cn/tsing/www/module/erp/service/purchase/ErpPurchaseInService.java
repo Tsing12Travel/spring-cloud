@@ -13,8 +13,6 @@ import java.util.List;
 
 /**
  * ERP 采购入库 Service 接口
- *
- * @author 芋道源码
  */
 public interface ErpPurchaseInService {
 
@@ -81,7 +79,6 @@ public interface ErpPurchaseInService {
     PageResult<ErpPurchaseInDO> getPurchaseInPage(ErpPurchaseInPageReqVO pageReqVO);
 
     // ==================== 采购入库项 ====================
-
     /**
      * 获得采购入库项列表
      *
@@ -97,5 +94,4 @@ public interface ErpPurchaseInService {
      * @return 采购入库项 List
      */
     List<ErpPurchaseInItemDO> getPurchaseInItemListByInIds(Collection<Long> inIds);
-
 }

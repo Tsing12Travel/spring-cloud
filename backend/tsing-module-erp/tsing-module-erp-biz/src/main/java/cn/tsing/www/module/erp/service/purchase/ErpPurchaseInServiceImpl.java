@@ -37,17 +37,14 @@ import static cn.tsing.www.framework.common.exception.util.ServiceExceptionUtil.
 import static cn.tsing.www.framework.common.util.collection.CollectionUtils.*;
 import static cn.tsing.www.module.erp.enums.ErrorCodeConstants.*;
 
-// TODO 芋艿：记录操作日志
+// TODO ：记录操作日志
 
 /**
  * ERP 采购入库 Service 实现类
- *
- * @author 芋道源码
  */
 @Service
 @Validated
 public class ErpPurchaseInServiceImpl implements ErpPurchaseInService {
-
     @Resource
     private ErpPurchaseInMapper purchaseInMapper;
     @Resource
@@ -244,6 +241,7 @@ public class ErpPurchaseInServiceImpl implements ErpPurchaseInService {
         if (CollUtil.isEmpty(purchaseIns)) {
             return;
         }
+
         purchaseIns.forEach(purchaseIn -> {
             if (ErpAuditStatus.APPROVE.getStatus().equals(purchaseIn.getStatus())) {
                 throw exception(PURCHASE_IN_DELETE_FAIL_APPROVE, purchaseIn.getNo());
@@ -260,7 +258,6 @@ public class ErpPurchaseInServiceImpl implements ErpPurchaseInService {
             // 2.3 更新采购订单的入库数量
             updatePurchaseOrderInCount(purchaseIn.getOrderId());
         });
-
     }
 
     private ErpPurchaseInDO validatePurchaseInExists(Long id) {
@@ -291,7 +288,6 @@ public class ErpPurchaseInServiceImpl implements ErpPurchaseInService {
     }
 
     // ==================== 采购入库项 ====================
-
     @Override
     public List<ErpPurchaseInItemDO> getPurchaseInItemListByInId(Long inId) {
         return purchaseInItemMapper.selectListByInId(inId);
@@ -304,5 +300,4 @@ public class ErpPurchaseInServiceImpl implements ErpPurchaseInService {
         }
         return purchaseInItemMapper.selectListByInIds(inIds);
     }
-
 }

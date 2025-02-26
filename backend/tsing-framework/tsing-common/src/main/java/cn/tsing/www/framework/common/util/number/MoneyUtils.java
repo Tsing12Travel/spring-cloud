@@ -8,8 +8,6 @@ import java.math.RoundingMode;
 
 /**
  * 金额工具类
- *
- * @author 芋道源码
  */
 public class MoneyUtils {
 
@@ -127,5 +125,4 @@ public class MoneyUtils {
         }
         return price.multiply(percent).divide(PERCENT_100, PRICE_SCALE, RoundingMode.HALF_UP);
     }
-
 }
