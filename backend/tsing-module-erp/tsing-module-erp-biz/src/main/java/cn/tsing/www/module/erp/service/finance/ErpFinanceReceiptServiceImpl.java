@@ -35,17 +35,14 @@ import static cn.tsing.www.framework.common.exception.util.ServiceExceptionUtil.
 import static cn.tsing.www.framework.common.util.collection.CollectionUtils.*;
 import static cn.tsing.www.module.erp.enums.ErrorCodeConstants.*;
 
-// TODO 芋艿：记录操作日志
+// TODO 记录操作日志
 
 /**
  * ERP 收款单 Service 实现类
- *
- * @author 芋道源码
  */
 @Service
 @Validated
 public class ErpFinanceReceiptServiceImpl implements ErpFinanceReceiptService {
-
     @Resource
     private ErpFinanceReceiptMapper financeReceiptMapper;
     @Resource
@@ -256,7 +253,6 @@ public class ErpFinanceReceiptServiceImpl implements ErpFinanceReceiptService {
     }
 
     // ==================== 收款单项 ====================
-
     @Override
     public List<ErpFinanceReceiptItemDO> getFinanceReceiptItemListByReceiptId(Long receiptId) {
         return financeReceiptItemMapper.selectListByReceiptId(receiptId);
@@ -269,5 +265,4 @@ public class ErpFinanceReceiptServiceImpl implements ErpFinanceReceiptService {
         }
         return financeReceiptItemMapper.selectListByReceiptIds(receiptIds);
     }
-
 }
