@@ -90,5 +90,4 @@ public class ErpNoRedisDAO {
         stringRedisTemplate.expire(key, Duration.ofDays(1L));
         return noPrefix + String.format("%06d", no);
     }
-
 }
