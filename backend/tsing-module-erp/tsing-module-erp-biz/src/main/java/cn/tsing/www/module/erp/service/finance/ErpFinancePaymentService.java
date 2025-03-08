@@ -12,11 +12,8 @@ import java.util.List;
 
 /**
  * ERP 付款单 Service 接口
- *
- * @author 芋道源码
  */
 public interface ErpFinancePaymentService {
-
     /**
      * 创建付款单
      *
@@ -64,7 +61,6 @@ public interface ErpFinancePaymentService {
     PageResult<ErpFinancePaymentDO> getFinancePaymentPage(ErpFinancePaymentPageReqVO pageReqVO);
 
     // ==================== 付款单项 ====================
-
     /**
      * 获得付款单项列表
      *
@@ -80,5 +76,4 @@ public interface ErpFinancePaymentService {
      * @return 付款单项 List
      */
     List<ErpFinancePaymentItemDO> getFinancePaymentItemListByPaymentIds(Collection<Long> paymentIds);
-
 }
