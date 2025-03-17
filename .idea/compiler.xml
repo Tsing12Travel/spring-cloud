@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for tsing" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/3.4.1/spring-boot-configuration-processor-3.4.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.3/mapstruct-processor-1.6.3.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.6.3/mapstruct-1.6.3.jar" />
+        </processorPath>
+        <module name="tsing-module-crm-api" />
+        <module name="tsing-module-trade-api" />
+        <module name="tsing-module-promotion-api" />
+        <module name="tsing-spring-boot-starter-biz-ip" />
+        <module name="tsing-module-ai-biz" />
+        <module name="tsing-spring-boot-starter-monitor" />
+        <module name="tsing-spring-boot-starter-excel" />
+        <module name="tsing-module-infra-api" />
+        <module name="tsing-module-trade-biz" />
+        <module name="tsing-module-system-api" />
+        <module name="tsing-module-bpm-biz" />
+        <module name="tsing-spring-boot-starter-web" />
+        <module name="tsing-module-product-api" />
+        <module name="tsing-spring-boot-starter-biz-data-permission" />
+        <module name="tsing-module-ai-api" />
+        <module name="tsing-module-promotion-biz" />
+        <module name="tsing-module-bpm-api" />
+        <module name="tsing-spring-boot-starter-mq" />
+        <module name="tsing-module-erp-api" />
+        <module name="tsing-spring-boot-starter-mybatis" />
+        <module name="tsing-spring-boot-starter-redis" />
+        <module name="tsing-module-system-biz" />
+        <module name="tsing-module-mp-api" />
+        <module name="tsing-spring-boot-starter-biz-tenant" />
+        <module name="tsing-module-crm-biz" />
+        <module name="tsing-module-erp-biz" />
+        <module name="tsing-spring-boot-starter-test" />
+        <module name="tsing-module-statistics-biz" />
+        <module name="tsing-module-statistics-api" />
+        <module name="tsing-spring-boot-starter-ai" />
+        <module name="tsing-module-mp-biz" />
+        <module name="tsing-spring-boot-starter-job" />
+        <module name="tsing-spring-boot-starter-biz-pay" />
+        <module name="tsing-spring-boot-starter-security" />
+        <module name="tsing-spring-boot-starter-websocket" />
+        <module name="tsing-gateway" />
+        <module name="tsing-module-member-api" />
+        <module name="tsing-common" />
+        <module name="tsing-module-member-biz" />
+        <module name="tsing-spring-boot-starter-env" />
+        <module name="tsing-module-infra-biz" />
+        <module name="tsing-module-pay-api" />
+        <module name="tsing-module-report-biz" />
+        <module name="tsing-module-product-biz" />
+        <module name="tsing-spring-boot-starter-rpc" />
+        <module name="tsing-spring-boot-starter-protection" />
+        <module name="tsing-module-pay-biz" />
+        <module name="tsing-module-report-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tsing-common" options="-parameters" />
+      <module name="tsing-gateway" options="-parameters" />
+      <module name="tsing-module-ai-api" options="-parameters" />
+      <module name="tsing-module-ai-biz" options="-parameters" />
+      <module name="tsing-module-bpm-api" options="-parameters" />
+      <module name="tsing-module-bpm-biz" options="-parameters" />
+      <module name="tsing-module-crm-api" options="-parameters" />
+      <module name="tsing-module-crm-biz" options="-parameters" />
+      <module name="tsing-module-erp-api" options="-parameters" />
+      <module name="tsing-module-erp-biz" options="-parameters" />
+      <module name="tsing-module-infra-api" options="-parameters" />
+      <module name="tsing-module-infra-biz" options="-parameters" />
+      <module name="tsing-module-member-api" options="-parameters" />
+      <module name="tsing-module-member-biz" options="-parameters" />
+      <module name="tsing-module-mp-api" options="-parameters" />
+      <module name="tsing-module-mp-biz" options="-parameters" />
+      <module name="tsing-module-pay-api" options="-parameters" />
+      <module name="tsing-module-pay-biz" options="-parameters" />
+      <module name="tsing-module-product-api" options="-parameters" />
+      <module name="tsing-module-product-biz" options="-parameters" />
+      <module name="tsing-module-promotion-api" options="-parameters" />
+      <module name="tsing-module-promotion-biz" options="-parameters" />
+      <module name="tsing-module-report-api" options="-parameters" />
+      <module name="tsing-module-report-biz" options="-parameters" />
+      <module name="tsing-module-statistics-api" options="-parameters" />
+      <module name="tsing-module-statistics-biz" options="-parameters" />
+      <module name="tsing-module-system-api" options="-parameters" />
+      <module name="tsing-module-system-biz" options="-parameters" />
+      <module name="tsing-module-trade-api" options="-parameters" />
+      <module name="tsing-module-trade-biz" options="-parameters" />
+      <module name="tsing-spring-boot-starter-ai" options="-parameters" />
+      <module name="tsing-spring-boot-starter-biz-data-permission" options="-parameters" />
+      <module name="tsing-spring-boot-starter-biz-ip" options="-parameters" />
+      <module name="tsing-spring-boot-starter-biz-pay" options="-parameters" />
+      <module name="tsing-spring-boot-starter-biz-tenant" options="-parameters" />
+      <module name="tsing-spring-boot-starter-env" options="-parameters" />
+      <module name="tsing-spring-boot-starter-excel" options="-parameters" />
+      <module name="tsing-spring-boot-starter-job" options="-parameters" />
+      <module name="tsing-spring-boot-starter-monitor" options="-parameters" />
+      <module name="tsing-spring-boot-starter-mq" options="-parameters" />
+      <module name="tsing-spring-boot-starter-mybatis" options="-parameters" />
+      <module name="tsing-spring-boot-starter-protection" options="-parameters" />
+      <module name="tsing-spring-boot-starter-redis" options="-parameters" />
+      <module name="tsing-spring-boot-starter-rpc" options="-parameters" />
+      <module name="tsing-spring-boot-starter-security" options="-parameters" />
+      <module name="tsing-spring-boot-starter-test" options="-parameters" />
+      <module name="tsing-spring-boot-starter-web" options="-parameters" />
+      <module name="tsing-spring-boot-starter-websocket" options="-parameters" />
+    </option>
+  </component>
+</project>
