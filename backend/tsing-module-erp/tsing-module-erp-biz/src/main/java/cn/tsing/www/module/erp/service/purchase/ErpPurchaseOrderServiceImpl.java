@@ -31,12 +31,10 @@ import static cn.tsing.www.framework.common.exception.util.ServiceExceptionUtil.
 import static cn.tsing.www.framework.common.util.collection.CollectionUtils.*;
 import static cn.tsing.www.module.erp.enums.ErrorCodeConstants.*;
 
-// TODO 芋艿：记录操作日志
+// TODO 记录操作日志
 
 /**
  * ERP 采购订单 Service 实现类
- *
- * @author 芋道源码
  */
 @Service
 @Validated
