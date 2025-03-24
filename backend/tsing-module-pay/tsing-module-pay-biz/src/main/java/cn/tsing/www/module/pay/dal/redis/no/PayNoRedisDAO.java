@@ -12,12 +12,9 @@ import java.time.LocalDateTime;
 
 /**
  * 支付序号的 Redis DAO
- *
- * @author 芋道源码
  */
 @Repository
 public class PayNoRedisDAO {
-
     @Resource
     private StringRedisTemplate stringRedisTemplate;
 
@@ -36,5 +33,4 @@ public class PayNoRedisDAO {
         stringRedisTemplate.expire(key, Duration.ofMinutes(1L));
         return noPrefix + no;
     }
-
 }

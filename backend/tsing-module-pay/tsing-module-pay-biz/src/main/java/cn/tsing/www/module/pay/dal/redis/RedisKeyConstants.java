@@ -2,11 +2,8 @@ package cn.tsing.www.module.pay.dal.redis;
 
 /**
  * 支付 Redis Key 枚举类
- *
- * @author 芋道源码
  */
 public interface RedisKeyConstants {
-
     /**
      * 通知任务的分布式锁
      *
@@ -32,5 +29,4 @@ public interface RedisKeyConstants {
      * VALUE 数据格式：编号自增
      */
     String PAY_NO = "pay_no:";
-
 }

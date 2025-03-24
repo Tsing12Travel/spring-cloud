@@ -12,12 +12,9 @@ import static cn.tsing.www.module.pay.dal.redis.RedisKeyConstants.PAY_WALLET_LOC
 
 /**
  * 支付钱包的锁 Redis DAO
- *
- * @author 芋道源码
  */
 @Repository
 public class PayWalletLockRedisDAO {
-
     @Resource
     private RedissonClient redissonClient;
 
@@ -38,5 +35,4 @@ public class PayWalletLockRedisDAO {
     private static String formatKey(Long id) {
         return String.format(PAY_WALLET_LOCK, id);
     }
-
 }

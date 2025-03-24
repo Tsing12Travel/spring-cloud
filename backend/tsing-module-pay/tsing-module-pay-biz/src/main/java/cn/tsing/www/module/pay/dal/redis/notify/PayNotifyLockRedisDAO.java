@@ -11,12 +11,9 @@ import static cn.tsing.www.module.pay.dal.redis.RedisKeyConstants.PAY_NOTIFY_LOC
 
 /**
  * 支付通知的锁 Redis DAO
- *
- * @author 芋道源码
  */
 @Repository
 public class PayNotifyLockRedisDAO {
-
     @Resource
     private RedissonClient redissonClient;
 
@@ -35,5 +32,4 @@ public class PayNotifyLockRedisDAO {
     private static String formatKey(Long id) {
         return String.format(PAY_NOTIFY_LOCK, id);
     }
-
 }
