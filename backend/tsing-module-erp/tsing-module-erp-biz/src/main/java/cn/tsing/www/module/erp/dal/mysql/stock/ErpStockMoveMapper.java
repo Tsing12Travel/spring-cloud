@@ -11,12 +11,9 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * ERP 库存调拨单 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpStockMoveMapper extends BaseMapperX<ErpStockMoveDO> {
-
     default PageResult<ErpStockMoveDO> selectPage(ErpStockMovePageReqVO reqVO) {
         MPJLambdaWrapperX<ErpStockMoveDO> query = new MPJLambdaWrapperX<ErpStockMoveDO>()
                 .likeIfPresent(ErpStockMoveDO::getNo, reqVO.getNo())
@@ -42,5 +39,4 @@ public interface ErpStockMoveMapper extends BaseMapperX<ErpStockMoveDO> {
     default ErpStockMoveDO selectByNo(String no) {
         return selectOne(ErpStockMoveDO::getNo, no);
     }
-
 }

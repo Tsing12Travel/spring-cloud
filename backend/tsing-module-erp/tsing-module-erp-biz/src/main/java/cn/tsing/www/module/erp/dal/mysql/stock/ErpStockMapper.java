@@ -17,8 +17,6 @@ import java.util.Map;
 
 /**
  * ERP 产品库存 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpStockMapper extends BaseMapperX<ErpStockDO> {

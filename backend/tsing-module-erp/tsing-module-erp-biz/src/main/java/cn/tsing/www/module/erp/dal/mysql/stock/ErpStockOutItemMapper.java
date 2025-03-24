@@ -9,12 +9,9 @@ import java.util.List;
 
 /**
  * ERP 其它出库单项 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpStockOutItemMapper extends BaseMapperX<ErpStockOutItemDO> {
-
     default List<ErpStockOutItemDO> selectListByOutId(Long outId) {
         return selectList(ErpStockOutItemDO::getOutId, outId);
     }
@@ -26,5 +23,4 @@ public interface ErpStockOutItemMapper extends BaseMapperX<ErpStockOutItemDO> {
     default int deleteByOutId(Long outId) {
         return delete(ErpStockOutItemDO::getOutId, outId);
     }
-
 }

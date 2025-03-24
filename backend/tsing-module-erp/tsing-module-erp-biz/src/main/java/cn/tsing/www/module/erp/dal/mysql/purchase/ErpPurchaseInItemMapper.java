@@ -16,8 +16,6 @@ import static cn.tsing.www.framework.common.util.collection.CollectionUtils.conv
 
 /**
  * ERP 采购入库项 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpPurchaseInItemMapper extends BaseMapperX<ErpPurchaseInItemDO> {

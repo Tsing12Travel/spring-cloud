@@ -8,13 +8,9 @@ import java.time.LocalDateTime;
 
 /**
  * ERP 采购统计 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpPurchaseStatisticsMapper {
-
     BigDecimal getPurchasePrice(@Param("beginTime") LocalDateTime beginTime,
                                 @Param("endTime") LocalDateTime endTime);
-
 }

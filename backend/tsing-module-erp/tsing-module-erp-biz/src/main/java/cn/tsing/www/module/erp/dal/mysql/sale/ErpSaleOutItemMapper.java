@@ -16,8 +16,6 @@ import static cn.tsing.www.framework.common.util.collection.CollectionUtils.conv
 
 /**
  * ERP 销售出库项 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpSaleOutItemMapper extends BaseMapperX<ErpSaleOutItemDO> {

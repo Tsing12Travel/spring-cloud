@@ -9,12 +9,9 @@ import java.util.List;
 
 /**
  * ERP 库存盘点单项 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpStockCheckItemMapper extends BaseMapperX<ErpStockCheckItemDO> {
-
     default List<ErpStockCheckItemDO> selectListByCheckId(Long checkId) {
         return selectList(ErpStockCheckItemDO::getCheckId, checkId);
     }
@@ -26,5 +23,4 @@ public interface ErpStockCheckItemMapper extends BaseMapperX<ErpStockCheckItemDO
     default int deleteByCheckId(Long checkId) {
         return delete(ErpStockCheckItemDO::getCheckId, checkId);
     }
-
 }

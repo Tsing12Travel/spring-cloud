@@ -11,8 +11,6 @@ import java.util.List;
 
 /**
  * ERP 客户 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpCustomerMapper extends BaseMapperX<ErpCustomerDO> {

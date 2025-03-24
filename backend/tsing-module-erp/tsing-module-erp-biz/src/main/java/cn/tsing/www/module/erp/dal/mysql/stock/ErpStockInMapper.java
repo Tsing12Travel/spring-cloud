@@ -11,12 +11,9 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * ERP 其它入库单 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpStockInMapper extends BaseMapperX<ErpStockInDO> {
-
     default PageResult<ErpStockInDO> selectPage(ErpStockInPageReqVO reqVO) {
         MPJLambdaWrapperX<ErpStockInDO> query = new MPJLambdaWrapperX<ErpStockInDO>()
                 .likeIfPresent(ErpStockInDO::getNo, reqVO.getNo())
@@ -43,5 +40,4 @@ public interface ErpStockInMapper extends BaseMapperX<ErpStockInDO> {
     default ErpStockInDO selectByNo(String no) {
         return selectOne(ErpStockInDO::getNo, no);
     }
-
 }

@@ -14,8 +14,6 @@ import java.util.Objects;
 
 /**
  * ERP 采购订单 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpPurchaseOrderMapper extends BaseMapperX<ErpPurchaseOrderDO> {

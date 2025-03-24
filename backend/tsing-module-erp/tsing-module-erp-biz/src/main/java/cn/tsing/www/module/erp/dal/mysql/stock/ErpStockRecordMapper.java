@@ -9,12 +9,9 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * ERP 产品库存明细 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpStockRecordMapper extends BaseMapperX<ErpStockRecordDO> {
-
     default PageResult<ErpStockRecordDO> selectPage(ErpStockRecordPageReqVO reqVO) {
         return selectPage(reqVO, new LambdaQueryWrapperX<ErpStockRecordDO>()
                 .eqIfPresent(ErpStockRecordDO::getProductId, reqVO.getProductId())
@@ -24,5 +21,4 @@ public interface ErpStockRecordMapper extends BaseMapperX<ErpStockRecordDO> {
                 .betweenIfPresent(ErpStockRecordDO::getCreateTime, reqVO.getCreateTime())
                 .orderByDesc(ErpStockRecordDO::getId));
     }
-
 }

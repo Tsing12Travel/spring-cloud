@@ -11,12 +11,9 @@ import java.util.List;
 
 /**
  * ERP 仓库 Mapper
- *
- * @author 芋道源码
  */
 @Mapper
 public interface ErpWarehouseMapper extends BaseMapperX<ErpWarehouseDO> {
-
     default PageResult<ErpWarehouseDO> selectPage(ErpWarehousePageReqVO reqVO) {
         return selectPage(reqVO, new LambdaQueryWrapperX<ErpWarehouseDO>()
                 .likeIfPresent(ErpWarehouseDO::getName, reqVO.getName())
@@ -31,5 +28,4 @@ public interface ErpWarehouseMapper extends BaseMapperX<ErpWarehouseDO> {
     default List<ErpWarehouseDO> selectListByStatus(Integer status) {
         return selectList(ErpWarehouseDO::getStatus, status);
     }
-
 }
