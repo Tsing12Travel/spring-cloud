@@ -1,0 +1,45 @@
+# version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-cloud
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - cloudnetwork
+
+  redis:
+    image: redis:latest
+    container_name: redis-cloud
+    ports:
+      - "6379:6379"
+    networks:
+      - cloudnetwork
+
+  nacos:
+    image: nacos/nacos-server:latest
+    container_name: nacos-cloud
+    environment:
+      - MODE=standalone
+      - PREFER_HOST_MODE=hostname
+      - NACOS_SERVERS=nacos-cloud
+    ports:
+      - "8848:8848"  # Nacos 默认端口
+      - "9848:9848"
+    networks:
+      - cloudnetwork
+    depends_on:
+      - mysql  # 确保 Nacos 启动时，MySQL 已启动
+
+volumes:
+  mysql-data:
+
+networks:
+  cloudnetwork:
+    driver: bridge
+
